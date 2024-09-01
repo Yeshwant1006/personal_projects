@@ -1,0 +1,18 @@
+select * from users
+select * from photos
+select * from photo_tags
+select * from tags
+select * from comments
+select * from follows
+select * from likes
+
+
+
+
+insert into users(username, created_at) values('stylish_yeshwant','2017-06-10 14:22:56')
+insert into photos(image_url, user_id, created_date) values('https://www.instagram.com/p/C1DHg_bAryesaJfKWZWrzVgwX7hUzK-QXcVcfs0/','15','2023-12-20 10:36:17');
+insert into photo_tags(photo_id, tag_id) values('15','3');
+insert into tags(tag_name, created_at) values('light','2024-02-25 19:30:25');
+insert into comments(comment_text, user_id, photo_id, created_at) values('rising from the depths, embracing the dawn 🤟','1','1','2024-02-25 19:30:58');
+insert into follows(follower_id, followee_id, created_at) values('15','17','2016-11-14 01:52:26');
+insert into likes(user_id, photo_id, created_at) values('15','46','2023-12-20 10:36:17');
